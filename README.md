@@ -1,31 +1,17 @@
-# Core_Streaming_Steam_Deck
+# entities-core-streaming-steam-deck
 
-OBS Streaming Work/Study
+Setup notes for streaming a handheld gaming PC's screen to the desktop through a capture card, for work and study sessions.
 
-- HDMI Dongle
-  - EVanlak HDMI Dummy Plug Headless Ghost Premium Aluminum Display Emulator Light Revelation 4k Dummy Plug HDMI Plugs Headless Machines Fit Anyone with a Headless GUI Server 3rd 3840x2160@60H
-- Elgato H60 X capture card
-- Steam deck OLED
-- USB-c cable (usb4)
-- HDMI cable
-- Steam dock with HDMI output
-- Obs-studio on Windows 11
-- Discord
-  - Share capture device
-  - Audio device must be set to Elgato audio
-- OBS Overlay
-  - Timecode
-    - Use https://windows-time-synchronizer.en.softonic.com/
-  - FPS counter from steamdeck
-  - Make background 50% opactiy
-  - Don’t overlap FPS counter with the timecode
-  - ![][image1]
+## Use
 
-```
-git clone https://github.com/V-Sekai/v-sekai-game.git
-git clone https://github.com/V-Sekai/world-godot
-install steamdevkit client
-setup connection
-```
+The handheld docks to a video output that feeds a capture card on the desktop, and a dummy display plug keeps the output alive. The desktop's broadcast software takes the capture card's video and audio and shares it to a voice chat. Its overlay places a synchronised timecode beside the handheld's frame-rate counter, without overlap, on a half-transparent background.
 
-![image1](attachments/image1.png)
+![Overlay](attachments/image1.png)
+
+## Build and run
+
+Nothing here builds. On the desktop, clone the V-Sekai game and engine repositories and pair with the handheld through the vendor's developer kit client.
+
+## Licence
+
+MIT. See `LICENSE`.
